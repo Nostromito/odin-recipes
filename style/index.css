@@ -1,0 +1,55 @@
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: brown;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: blanchedalmond;
+
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 250px;
+  min-height: 250px;
+
+  margin-bottom: 20px;
+}
+
+ul {
+  display: grid;
+  gap: 1em;
+
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: blanchedalmond;
+}
+
+a {
+  color: blanchedalmond;
+  text-decoration: none;
+}
+
+a:hover {
+  color: burlywood;
+}
